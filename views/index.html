@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IOT Experiment</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/a87d11b5-8636-4309-8e45-d8e25846124b%2Felectric-torch_1f526.png?1524622381356" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1>
+      IOT Experiment
+    </h1>
+    
+    <div id="app">
+      <h3>
+        Light Status: {{ status }}
+      </h3>
+      
+      <img  v-bind:src="light">
+      
+      <br>
+      <button v-on:click="toggle">Toggle Light</button>
+    </div>
+
+    
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js"></script>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
